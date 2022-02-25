@@ -1,0 +1,27 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin WH($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin PaddingAllSides($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+@mixin marginAllSides($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
+}
+@mixin padding($topBottom, $rightLeft) {
+  padding: $topBottom $rightLeft;
+}
+@mixin margin($topBottom, $rightLeft) {
+  margin: $topBottom $rightLeft;
+}
+
+@mixin Bg($bg, $color) {
+  background: $bg;
+  color: $color;
+}
