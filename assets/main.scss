@@ -247,23 +247,24 @@ body {
                 width: 25rem;
                 padding: 1rem;
                 .box {
-                  background: red;
+                  // background: red;
                   z-index: 2;
                   position: relative;
                   background: linear-gradient(0, 0, 0, 0.5);
                   border-radius: 0.3rem;
                   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                  background: url("images/Digital-marketor&website-developer-image.jpg");
 
                   &:nth-child(1) {
-                    &::after {
-                      content: "Web development";
-                      position: absolute;
-                      top: 50%;
-                      left: 50%;
-                      color: white;
-                      transform: translate(-50%, -50%);
-                      font-size: 1.5rem;
-                    }
+                    // &::after {
+                    //   content: "Web development";
+                    //   position: absolute;
+                    //   top: 50%;
+                    //   left: 50%;
+                    //   color: white;
+                    //   transform: translate(-50%, -50%);
+                    //   font-size: 1.5rem;
+                    // }
                   }
                   img {
                     z-index: -1;
@@ -279,5 +280,9 @@ body {
         // Targeting fas icon
       }
     }
+  }
+  main h1 {
+    text-align: center;
+    color: red;
   }
 }

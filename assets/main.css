@@ -249,7 +249,6 @@ body .MainHeader nav ul li .megaMenu .content #imageRow {
 }
 
 body .MainHeader nav ul li .megaMenu .content #imageRow .box {
-  background: red;
   z-index: 2;
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(0), color-stop(0), to(0.5));
@@ -257,17 +256,7 @@ body .MainHeader nav ul li .megaMenu .content #imageRow .box {
   border-radius: 0.3rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-body .MainHeader nav ul li .megaMenu .content #imageRow .box:nth-child(1)::after {
-  content: "Web development";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 1.5rem;
+  background: url("images/Digital-marketor&website-developer-image.jpg");
 }
 
 body .MainHeader nav ul li .megaMenu .content #imageRow .box img {
@@ -275,5 +264,10 @@ body .MainHeader nav ul li .megaMenu .content #imageRow .box img {
   border-radius: 0.3rem;
   background-blend-mode: multiply;
   background-color: #9b9af3;
+}
+
+body main h1 {
+  text-align: center;
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */
