@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
-@import "Uitils";
-@import "colors";
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import "_home";
+@import "_colors";
+@import "_nav";
+@import "_Uitils";
+@import "_about";
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: "Lato";
+  font-family: "Poppins", "sans-serif";
 }
 html {
   font-size: 62.5%;
@@ -21,268 +23,108 @@ html {
 }
 
 body {
-  @include Bg($color6, $color4); //Body Color
+  // cursor: none;
+  // Download now link grow
+  .downloadLink {
+    transform: scale(3);
+    background: white;
 
-  @include WH(100%, 100vh);
-  .MainHeader {
-    //Header Css
-    @include Bg(#182956, white);
-    @include WH(100%, 10vh);
-    // height: 20vh;
-    nav {
-      position: relative;
-      @include WH(100%, 10vh);
-      width: 80%;
-      margin: auto;
-      @include flex();
-      justify-content: space-between;
-      // Heading and logo of website
-      h1 {
-        font-size: 2rem;
-      }
-
-      ul {
-        //Ul Css
-        // position: relative;
-
-        li {
-          // position: relative;
-          //Ul >li css
-          // position: relative;
-          float: left;
-
-          @include margin(0, 1rem);
-
-          padding: 1rem 2rem;
-          transition: 0.2s;
-          border-radius: 0.5rem;
-          &:hover {
-            ul,
-            #imageRow {
-              // display: block;
-              height: 75vh;
-              overflow: show;
-            }
-          }
-          // Li > a
-          a {
-            position: relative;
-            font-weight: 900;
-            color: white;
-            font-size: 1.5rem;
-            text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-              0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-            display: block;
-          }
-          //When :hover on Li
-          &:hover {
-            background: $color7;
-          }
-          // Mega Menu
-          // .megaMenu.active {
-          //   height: 75vh;
-          //   overflow: show;
-          // }
-          .megaMenu {
-            transition: all 0.3s;
-            // display: none;
-            height: 0;
-            overflow: hidden;
-            position: absolute;
-            top: 10vh;
-            left: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.25);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            color: black;
-            // @include Bg(white, black);
-            // Content Section
-            .content {
-              @include flex();
-              justify-content: space-between;
-              // @include Bg(white, black);
-              width: 100%;
-              // Targeting Header of Mega menu
-              header {
-                font-size: 1rem;
-                position: relative;
-                font-weight: 500;
-                // background: #000;
-                // height: 10vh;
-                // margin: 1rem;
-                padding: 1rem;
-
-                &::after {
-                  content: "";
-                  width: 100%;
-                  height: 0.1rem;
-                  background: #7e7878;
-                  top: 100%;
-                  bottom: -100%;
-                  left: 0;
-                  display: block;
-                }
-              }
-
-              .row {
-                // height: 75vh;
-                text-align: center;
-                width: 19rem;
-                // line-height: 45px;
-                // Targeting img in row
-                img {
-                  width: 100%;
-                  object-fit: cover;
-                }
-                ul li {
-                  margin: 0;
-                  width: 100%;
-                  height: 8rem;
-                  text-align: center;
-                  &:hover {
-                    a {
-                      color: white;
-                    }
-                    i {
-                      color: white !important;
-                    }
-                  }
-                  a {
-                    color: black;
-                    font-size: 1.2rem;
-                    display: block;
-                    text-shadow: none;
-                    padding: 0.5rem;
-                    font-weight: 400;
-                    // i:nth-child(1) {
-                    //   color: red;
-                    // }
-                    i {
-                      font-size: 3rem;
-                    }
-                    .fa-html5 {
-                      color: #dd4b25;
-                    }
-                    .fa-css3-alt {
-                      color: #254bdd;
-                    }
-                    .fa-js-square {
-                      color: #efd81d;
-                    }
-                    .fa-react {
-                      color: #5cd2f3;
-                    }
-                    .fa-tags {
-                      color: #5e96ed;
-                    }
-                    .fa-chart-pie {
-                      color: #fbbd08;
-                    }
-                    .fa-chart-line {
-                      color: #e37400;
-                    }
-                    .fa-hotjar {
-                      color: #ff3c00;
-                    }
-                    .fa-rectangle-ad {
-                      color: #4081ec;
-                    }
-                    .fa-facebook {
-                      color: #1877f2;
-                    }
-                    .fa-envelope {
-                      background: linear-gradient(
-                        to right top,
-                        #4285f4,
-                        #9372e5,
-                        #c55bc9,
-                        #e442a1,
-                        #f23474,
-                        #ef4350,
-                        #e2582d,
-                        #cd6c00,
-                        #b08200,
-                        #8e9200,
-                        #699f2a,
-                        #35a854
-                      );
-                      -webkit-background-clip: text;
-                      -webkit-text-fill-color: transparent;
-                    }
-                    .fa-uikit {
-                      color: #15435e;
-                    }
-                    .fa-figma {
-                      color: #9d56f7;
-                    }
-                    .fa-palette {
-                      // font-size: 72px;
-                      background: linear-gradient(
-                        to right top,
-                        #d16ba5,
-                        #c777b9,
-                        #ba83ca,
-                        #aa8fd8,
-                        #9a9ae1,
-                        #8aa7ec,
-                        #79b3f4,
-                        #69bff8,
-                        #52cffe,
-                        #41dfff,
-                        #46eefa,
-                        #5ffbf1
-                      );
-                      -webkit-background-clip: text;
-                      -webkit-text-fill-color: transparent;
-                    }
-                  }
-                }
-              }
-              // Targeting img
-              #imageRow {
-                width: 25rem;
-                padding: 1rem;
-                .box {
-                  // background: red;
-                  z-index: 2;
-                  position: relative;
-                  background: linear-gradient(0, 0, 0, 0.5);
-                  border-radius: 0.3rem;
-                  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                  background: url("images/Digital-marketor&website-developer-image.jpg");
-
-                  &:nth-child(1) {
-                    // &::after {
-                    //   content: "Web development";
-                    //   position: absolute;
-                    //   top: 50%;
-                    //   left: 50%;
-                    //   color: white;
-                    //   transform: translate(-50%, -50%);
-                    //   font-size: 1.5rem;
-                    // }
-                  }
-                  img {
-                    z-index: -1;
-                    border-radius: 0.3rem;
-                    background-blend-mode: multiply;
-                    background-color: rgb(155, 154, 243);
-                  }
-                }
-              }
-            }
-          }
-        }
-        // Targeting fas icon
-      }
+    animation-play-state: paused !important;
+    transform-origin: center;
+    &::after {
+      content: "Hire me" !important;
+      display: block !important;
+      font-size: 0.7rem;
+      // padding-top: 0.4rem !important;
     }
   }
-  main h1 {
-    text-align: center;
-    color: red;
+  // IMg grow
+  .imgGrow {
+    animation-play-state: paused !important;
+    transform: scale(6);
+    // background: black;
+
+    transform-origin: center;
+    // background-attachment: fixed;
+    // filter: grayscale(100%);
   }
+  // Target text
+
+  .textGrow {
+    animation-play-state: paused !important;
+    transform: scale(6);
+    background: white;
+
+    transform-origin: center;
+  }
+  .h2Grow {
+    animation-play-state: paused !important;
+    transform: scale(6);
+    transform-origin: center;
+  }
+  // Targeting Custom Cursor
+  .cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid white;
+    border-radius: 50%;
+    position: absolute;
+    // z-index: 1000;
+    // transform: translate(-50%, -50%);
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim 0.5s infinite alternate;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    background: white;
+  }
+  .cursor::after {
+    content: "Open now";
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    background: white;
+    display: none;
+    z-index: 1000;
+  }
+
+  .linkGrow {
+    transform: scale(3);
+    background: white;
+
+    animation-play-state: paused;
+    transform-origin: center;
+    &::after {
+      display: block;
+    }
+  }
+
+  .linkHover {
+    color: black !important;
+  }
+  @keyframes cursorAnim {
+    from {
+      scale: (1);
+    }
+    to {
+      scale: (0.7);
+    }
+  }
+
+  // @include Bg($color6, $color4); //Body Color
+  background: $newMainColor;
+  // background-color: #f0a500;
+  // ;
+
+  // @include WH(100%, 100vh);
+  // Targeting main section
+
+  // About me section
 }

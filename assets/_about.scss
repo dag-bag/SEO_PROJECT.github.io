@@ -1,0 +1,32 @@
+.about {
+  padding-top: 10rem;
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  background: $newMainColor;
+  .aboutMe {
+    h2:nth-child(1) {
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      &::after {
+        content: "";
+        width: 50%;
+        height: 0.5rem;
+        // color: $newMainColor;
+        position: absolute;
+        display: block;
+        background: $secColor;
+        bottom: 0;
+        left: 25%;
+        right: 0;
+        border-radius: 1rem;
+      }
+    }
+    h2:nth-child(2) {
+      padding-top: 2rem;
+    }
+    color: white;
+    font-size: 2rem;
+  }
+}

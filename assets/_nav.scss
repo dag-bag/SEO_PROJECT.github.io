@@ -1,0 +1,255 @@
+.MainHeader {
+  //Header Css
+  @include Bg($newMainColor, white);
+
+  @include WH(100%, 10vh);
+  // height: 20vh;
+  nav {
+    position: relative;
+    @include WH(100%, 10vh);
+    width: 80%;
+    margin: auto;
+    @include flex();
+    justify-content: space-between;
+    // Heading and logo of website
+    .logo {
+      width: 7.5rem;
+      // img {
+      //   z-index: -1;
+      //   width: 100%;
+      // }
+      a {
+        color: white;
+        font-size: 2rem;
+      }
+    }
+
+    ul {
+      //Ul Css
+      // position: relative;
+
+      li {
+        // position: relative;
+        //Ul >li css
+        // position: relative;
+        float: left;
+
+        @include margin(0, 1rem);
+
+        padding: 1rem 2rem;
+        transition: 0.2s;
+        border-radius: 0.5rem;
+
+        &:hover {
+          ul {
+            display: block;
+            height: 75vh;
+            overflow: show;
+          }
+        }
+        // Li > a
+        a {
+          position: relative;
+          font-weight: 500;
+          color: white;
+          font-size: 1.5rem;
+          text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+            0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+          display: block;
+        }
+        // When :hover on Li
+
+        // Mega Menu
+        // .megaMenu.active {
+        //   height: 75vh;
+        //   overflow: show;
+        // }
+        .megaMenu {
+          transition: all 0.3s;
+          // display: none;
+          height: 0;
+          overflow: hidden;
+          position: absolute;
+          top: 10vh;
+          left: 0;
+          width: 100%;
+          background-color: white;
+          // background: rgba(255, 255, 255, 0.25);
+          // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          // backdrop-filter: blur(4px);
+          // -webkit-backdrop-filter: blur(4px);
+          border-radius: 10px;
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+            rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          // border: 1px solid rgba(255, 255, 255, 0.18);
+          // backdrop-filter: blur(16px) saturate(180%);
+          // -webkit-backdrop-filter: blur(16px) saturate(180%);
+          // background-color: rgba(17, 25, 40, 0.64);
+          // border-radius: 12px;
+          // border: 1px solid rgba(255, 255, 255, 0.125);
+          color: black;
+          // @include Bg(white, black);
+          // Content Section
+          .content {
+            @include flex();
+            justify-content: space-between;
+            // @include Bg(white, black);
+            width: 100%;
+            // Targeting Header of Mega menu
+            header {
+              font-size: 1rem;
+              position: relative;
+              font-weight: 400;
+              // background: #000;
+              // height: 10vh;
+              // margin: 1rem;
+              padding: 1rem;
+
+              &::after {
+                content: "";
+                width: 100%;
+                height: 0.1rem;
+                background: #7e7878;
+                top: 100%;
+                bottom: -100%;
+                left: 0;
+                display: block;
+              }
+            }
+
+            .row {
+              // height: 75vh;
+              text-align: center;
+              width: 19rem;
+              // line-height: 45px;
+              // Targeting img in row
+
+              ul li {
+                margin: 0;
+                width: 100%;
+                height: 8rem;
+                text-align: center;
+                &:hover {
+                  background: #f0a500;
+                  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                  a {
+                    color: white;
+                  }
+                  i {
+                    color: white !important;
+                  }
+                }
+
+                a {
+                  color: black;
+                  font-size: 1.2rem;
+                  display: block;
+                  text-shadow: none;
+                  padding: 0.5rem;
+                  font-weight: 300;
+                  // i:nth-child(1) {
+                  //   color: red;
+                  // }
+                  i {
+                    font-size: 3rem;
+                  }
+                  .fa-html5 {
+                    color: #dd4b25;
+                  }
+                  .fa-css3-alt {
+                    color: #254bdd;
+                  }
+                  .fa-js-square {
+                    color: #efd81d;
+                  }
+                  .fa-react {
+                    color: #5cd2f3;
+                  }
+                  .fa-tags {
+                    color: #5e96ed;
+                  }
+                  .fa-chart-pie {
+                    color: #fbbd08;
+                  }
+                  .fa-chart-line {
+                    color: #e37400;
+                  }
+                  .fa-hotjar {
+                    color: #ff3c00;
+                  }
+                  .fa-rectangle-ad {
+                    color: #4081ec;
+                  }
+                  .fa-facebook {
+                    color: #1877f2;
+                  }
+                  .fa-envelope {
+                    background: linear-gradient(
+                      to right top,
+                      #4285f4,
+                      #9372e5,
+                      #c55bc9,
+                      #e442a1,
+                      #f23474,
+                      #ef4350,
+                      #e2582d,
+                      #cd6c00,
+                      #b08200,
+                      #8e9200,
+                      #699f2a,
+                      #35a854
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                  }
+                  .fa-uikit {
+                    color: #15435e;
+                  }
+                  .fa-figma {
+                    color: #9d56f7;
+                  }
+                  .fa-palette {
+                    // font-size: 72px;
+                    background: linear-gradient(
+                      to right top,
+                      #d16ba5,
+                      #c777b9,
+                      #ba83ca,
+                      #aa8fd8,
+                      #9a9ae1,
+                      #8aa7ec,
+                      #79b3f4,
+                      #69bff8,
+                      #52cffe,
+                      #41dfff,
+                      #46eefa,
+                      #5ffbf1
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                  }
+                }
+              }
+            }
+            // Targeting img
+            #imageRow {
+              width: 25rem;
+              padding: 1rem;
+              .box {
+                // background: red;
+                z-index: 2;
+                position: relative;
+                background: linear-gradient(0, 0, 0, 0.5);
+                border-radius: 0.3rem;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                background: url("images/Digital-marketor&website-developer-image.jpg");
+              }
+            }
+          }
+        }
+      }
+      // Targeting fas icon
+    }
+  }
+}

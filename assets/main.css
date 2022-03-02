@@ -1,43 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  font-family: "Lato";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+main {
+  width: 80%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-::-moz-selection {
-  color: crimson;
-}
-
-::selection {
-  color: crimson;
-}
-
-body {
-  background: #e6e9f2;
-  color: #66fcf1;
+main .mainCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 100vh;
+  width: 100%;
 }
 
-body .MainHeader {
-  background: #182956;
+main .mainCol .mainLeft {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  color: white;
+}
+
+main .mainCol .mainLeft h2 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+main .mainCol .mainLeft h2 strong {
+  color: #f0a500;
+  background: #17171f;
+}
+
+main .mainCol .mainLeft #resume {
+  background-color: #f0a500;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  margin-top: 1rem;
+  display: block;
+  width: 30%;
+  font-size: 1.6rem;
+}
+
+main .mainCol .mainRight {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 43vh;
+}
+
+main .mainCol .mainRight img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+.MainHeader {
+  background: #17171f;
   color: white;
   width: 100%;
   height: 10vh;
 }
 
-body .MainHeader nav {
+.MainHeader nav {
   position: relative;
   width: 100%;
   height: 10vh;
@@ -57,11 +104,16 @@ body .MainHeader nav {
           justify-content: space-between;
 }
 
-body .MainHeader nav h1 {
+.MainHeader nav .logo {
+  width: 7.5rem;
+}
+
+.MainHeader nav .logo a {
+  color: white;
   font-size: 2rem;
 }
 
-body .MainHeader nav ul li {
+.MainHeader nav ul li {
   float: left;
   margin: 0 1rem;
   padding: 1rem 2rem;
@@ -70,26 +122,22 @@ body .MainHeader nav ul li {
   border-radius: 0.5rem;
 }
 
-body .MainHeader nav ul li:hover ul,
-body .MainHeader nav ul li:hover #imageRow {
+.MainHeader nav ul li:hover ul {
+  display: block;
   height: 75vh;
   overflow: show;
 }
 
-body .MainHeader nav ul li a {
+.MainHeader nav ul li a {
   position: relative;
-  font-weight: 900;
+  font-weight: 500;
   color: white;
   font-size: 1.5rem;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   display: block;
 }
 
-body .MainHeader nav ul li:hover {
-  background: #5096b9;
-}
-
-body .MainHeader nav ul li .megaMenu {
+.MainHeader nav ul li .megaMenu {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   height: 0;
@@ -98,17 +146,14 @@ body .MainHeader nav ul li .megaMenu {
   top: 10vh;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background-color: white;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   color: black;
 }
 
-body .MainHeader nav ul li .megaMenu .content {
+.MainHeader nav ul li .megaMenu .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,14 +169,14 @@ body .MainHeader nav ul li .megaMenu .content {
   width: 100%;
 }
 
-body .MainHeader nav ul li .megaMenu .content header {
+.MainHeader nav ul li .megaMenu .content header {
   font-size: 1rem;
   position: relative;
-  font-weight: 500;
+  font-weight: 400;
   padding: 1rem;
 }
 
-body .MainHeader nav ul li .megaMenu .content header::after {
+.MainHeader nav ul li .megaMenu .content header::after {
   content: "";
   width: 100%;
   height: 0.1rem;
@@ -142,113 +187,113 @@ body .MainHeader nav ul li .megaMenu .content header::after {
   display: block;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row {
+.MainHeader nav ul li .megaMenu .content .row {
   text-align: center;
   width: 19rem;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-body .MainHeader nav ul li .megaMenu .content .row ul li {
+.MainHeader nav ul li .megaMenu .content .row ul li {
   margin: 0;
   width: 100%;
   height: 8rem;
   text-align: center;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li:hover a {
+.MainHeader nav ul li .megaMenu .content .row ul li:hover {
+  background: #f0a500;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.MainHeader nav ul li .megaMenu .content .row ul li:hover a {
   color: white;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li:hover i {
+.MainHeader nav ul li .megaMenu .content .row ul li:hover i {
   color: white !important;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a {
+.MainHeader nav ul li .megaMenu .content .row ul li a {
   color: black;
   font-size: 1.2rem;
   display: block;
   text-shadow: none;
   padding: 0.5rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a i {
+.MainHeader nav ul li .megaMenu .content .row ul li a i {
   font-size: 3rem;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-html5 {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-html5 {
   color: #dd4b25;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-css3-alt {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-css3-alt {
   color: #254bdd;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-js-square {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-js-square {
   color: #efd81d;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-react {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-react {
   color: #5cd2f3;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-tags {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-tags {
   color: #5e96ed;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-chart-pie {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-chart-pie {
   color: #fbbd08;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-chart-line {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-chart-line {
   color: #e37400;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-hotjar {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-hotjar {
   color: #ff3c00;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-rectangle-ad {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-rectangle-ad {
   color: #4081ec;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-facebook {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-facebook {
   color: #1877f2;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-envelope {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-envelope {
   background: -webkit-gradient(linear, left bottom, right top, from(#4285f4), color-stop(#9372e5), color-stop(#c55bc9), color-stop(#e442a1), color-stop(#f23474), color-stop(#ef4350), color-stop(#e2582d), color-stop(#cd6c00), color-stop(#b08200), color-stop(#8e9200), color-stop(#699f2a), to(#35a854));
   background: linear-gradient(to right top, #4285f4, #9372e5, #c55bc9, #e442a1, #f23474, #ef4350, #e2582d, #cd6c00, #b08200, #8e9200, #699f2a, #35a854);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-uikit {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-uikit {
   color: #15435e;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-figma {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-figma {
   color: #9d56f7;
 }
 
-body .MainHeader nav ul li .megaMenu .content .row ul li a .fa-palette {
+.MainHeader nav ul li .megaMenu .content .row ul li a .fa-palette {
   background: -webkit-gradient(linear, left bottom, right top, from(#d16ba5), color-stop(#c777b9), color-stop(#ba83ca), color-stop(#aa8fd8), color-stop(#9a9ae1), color-stop(#8aa7ec), color-stop(#79b3f4), color-stop(#69bff8), color-stop(#52cffe), color-stop(#41dfff), color-stop(#46eefa), to(#5ffbf1));
   background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-body .MainHeader nav ul li .megaMenu .content #imageRow {
+.MainHeader nav ul li .megaMenu .content #imageRow {
   width: 25rem;
   padding: 1rem;
 }
 
-body .MainHeader nav ul li .megaMenu .content #imageRow .box {
+.MainHeader nav ul li .megaMenu .content #imageRow .box {
   z-index: 2;
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(0), color-stop(0), to(0.5));
@@ -259,15 +304,181 @@ body .MainHeader nav ul li .megaMenu .content #imageRow .box {
   background: url("images/Digital-marketor&website-developer-image.jpg");
 }
 
-body .MainHeader nav ul li .megaMenu .content #imageRow .box img {
-  z-index: -1;
-  border-radius: 0.3rem;
-  background-blend-mode: multiply;
-  background-color: #9b9af3;
+.about {
+  padding-top: 10rem;
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  background: #17171f;
 }
 
-body main h1 {
+.about .aboutMe {
+  color: white;
+  font-size: 2rem;
+}
+
+.about .aboutMe h2:nth-child(1) {
   text-align: center;
-  color: red;
+  padding: 1rem;
+  position: relative;
+}
+
+.about .aboutMe h2:nth-child(1)::after {
+  content: "";
+  width: 50%;
+  height: 0.5rem;
+  position: absolute;
+  display: block;
+  background: #f0a500;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  border-radius: 1rem;
+}
+
+.about .aboutMe h2:nth-child(2) {
+  padding-top: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", "sans-serif";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+::-moz-selection {
+  color: crimson;
+}
+
+::selection {
+  color: crimson;
+}
+
+body {
+  background: #17171f;
+}
+
+body .downloadLink {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  background: white;
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+body .downloadLink::after {
+  content: "Hire me" !important;
+  display: block !important;
+  font-size: 0.7rem;
+}
+
+body .imgGrow {
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
+  -webkit-transform: scale(6);
+          transform: scale(6);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+body .textGrow {
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
+  -webkit-transform: scale(6);
+          transform: scale(6);
+  background: white;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+body .h2Grow {
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
+  -webkit-transform: scale(6);
+          transform: scale(6);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+body .cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid white;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-animation: cursorAnim 0.5s infinite alternate;
+          animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background: white;
+}
+
+body .cursor::after {
+  content: "Open now";
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  display: none;
+  z-index: 1000;
+}
+
+body .linkGrow {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  background: white;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+body .linkGrow::after {
+  display: block;
+}
+
+body .linkHover {
+  color: black !important;
+}
+
+@-webkit-keyframes cursorAnim {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0.7;
+  }
+}
+
+@keyframes cursorAnim {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0.7;
+  }
 }
 /*# sourceMappingURL=main.css.map */
