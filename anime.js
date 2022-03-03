@@ -13,7 +13,7 @@ const texts = [
   "CSS3",
 ];
 
-var tagCloud = TagCloud(".tagcloud", texts, {
+var tagCloud = TagCloud(".rightAbout", texts, {
   radius: 230,
   maxSpeed: "fast",
   initSpeed: "fast",
