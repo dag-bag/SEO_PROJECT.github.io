@@ -1,4 +1,3 @@
-import { canvas } from "./anime.js";
 const mega = document.querySelector("#mega");
 const megaMenu = document.querySelector(".megaMenu");
 mega.addEventListener("mouseover", () => {
@@ -29,6 +28,15 @@ function main(element, Class) {
     singleElement.addEventListener("mouseleave", () => {
       mouseCursor.classList.remove(`${Class}`);
     });
+  });
+}
+// Submain function
+function subMain(element, Class) {
+  element.addEventListener("mouseover", () => {
+    mouseCursor.classList.add(`${Class}`);
+  });
+  element.addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove(`${Class}`);
   });
 }
 // MouseOver functions
@@ -88,22 +96,30 @@ main(strong, "textGrow");
 // h2.addEventListener("mouseleave", () => {
 //   mouseCursor.classList.remove("h2Grow");
 // });
-mouseOver(h2, "h2Grow");
-mouseleave(h2, "h2Grow");
+subMain(h2, "h2Grow");
+// mouseleave(h2, "h2Grow");
 /**@ImgHover_kri_jayegi */
 
 main(imgs, "imgGrow");
 
 // download link hover
-const downloadBtn = document.querySelector("#resume");
+const downloadBtn = document.querySelector("#hireBtn");
 
-mouseOver(downloadBtn, "downloadLink");
-mouseleave(downloadBtn, "downloadLink");
-// testing
-canvas.addEventListener("mouseover", () => {
-  mouseCursor.style.display = "none";
-  cursor.style;
+subMain(downloadBtn, "downloadLink");
+// mouseleave(downloadBtn, "downloadLink");
+// Resume link hover
+const resumeBtn = document.querySelector("#resume");
+console.log(resumeBtn);
+subMain(resumeBtn, "resumeLink");
+// mouseleave(resumeBtn, "resumeLink");
+
+// More about me link hover
+
+const aboutMe = document.querySelector("#aboutMe");
+
+aboutMe.addEventListener("mouseover", () => {
+  aboutMe.classList.add("showAbout");
 });
-canvas.addEventListener("mouseleave", () => {
-  mouseCursor.style.display = "block";
+aboutMe.addEventListener("mouseleave", () => {
+  aboutMe.classList.remove("showAbout");
 });

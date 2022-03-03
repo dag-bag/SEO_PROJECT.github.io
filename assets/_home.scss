@@ -9,12 +9,15 @@ main {
   margin: auto;
   .mainCol {
     @include flex();
+    justify-content: space-between;
+    gap: 5rem;
+    flex-wrap: wrap;
     width: 100%;
     height: 100vh;
     width: 100%;
     .mainLeft {
       flex-wrap: wrap;
-      flex: 1 1 60%;
+      flex: 1 1 60rem;
       color: white;
       // color: black;
       h2 {
@@ -25,20 +28,13 @@ main {
           background: $newMainColor;
         }
       }
-      #resume {
-        background-color: $secColor;
-        padding: 1rem 2rem;
-        border-radius: 2rem;
-        color: white;
-        margin-top: 1rem;
-        display: block;
-        width: 30%;
-        font-size: 1.6rem;
+      #hireBtn {
+        @include btn();
       }
     }
     .mainRight {
       // @include flex();
-      flex: 1 1 30%;
+      flex: 1 1 30rem;
       background: white;
       border-radius: 1rem;
       overflow: hidden;

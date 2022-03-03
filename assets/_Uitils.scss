@@ -25,3 +25,14 @@
   background: $bg;
   color: $color;
 }
+
+@mixin btn {
+  background-color: $secColor;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  margin-top: 1rem;
+  display: block;
+  width: 30%;
+  font-size: 1.6rem;
+}

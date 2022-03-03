@@ -24,6 +24,40 @@ html {
 
 body {
   // cursor: none;
+  // About me LINk
+  .showAbout {
+    &::after {
+      content: "If You Want Know About Me Click Here." !important;
+      width: 13rem !important;
+      height: 13rem !important;
+      border: 0.2rem solid white;
+      border-radius: 50%;
+      position: absolute;
+      top: 100%;
+      right: 30%;
+      color: black;
+      text-align: center;
+      padding: 1rem;
+      background: white !important;
+      @include flex();
+      // display: block !important;
+      z-index: 939092309;
+    }
+  }
+  // Resume Link
+  .resumeLink {
+    transform: scale(3);
+    background: white;
+
+    animation-play-state: paused !important;
+    transform-origin: center;
+    &::after {
+      content: "Download Now" !important;
+      display: block !important;
+      // @include flex();
+      font-size: 0.7rem;
+    }
+  }
   // Download now link grow
   .downloadLink {
     transform: scale(3);
@@ -34,6 +68,7 @@ body {
     &::after {
       content: "Hire me" !important;
       display: block !important;
+      // @include flex();
       font-size: 0.7rem;
       // padding-top: 0.4rem !important;
     }
