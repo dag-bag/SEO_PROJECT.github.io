@@ -342,7 +342,7 @@ main .mainCol .mainRight img {
   }
   .rightAbout div {
     margin: auto;
-    width: 276px !important;
+    width: 60px !important;
   }
 }
 
@@ -358,7 +358,7 @@ main .mainCol .mainRight img {
   }
   .rig .rightAbout div {
     margin: auto;
-    width: 200px !important;
+    width: 30px !important;
   }
 }
 
@@ -446,6 +446,7 @@ main .mainCol .mainRight img {
   display: block;
   width: 30%;
   font-size: 1.6rem;
+  background: #000;
 }
 
 .about .aboutMe .leftAbout .btns #aboutMe {

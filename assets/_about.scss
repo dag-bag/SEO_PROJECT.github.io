@@ -46,6 +46,7 @@
         padding-top: 1rem;
         #resume {
           @include btn();
+          background: #000;
         }
         #aboutMe {
           @include btn();
