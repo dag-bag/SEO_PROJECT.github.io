@@ -36,3 +36,13 @@
   width: 30%;
   font-size: 1.6rem;
 }
+
+@mixin col($space, $gap) {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  @include flex();
+  justify-content: $space;
+  gap: $gap;
+  flex-wrap: wrap;
+}

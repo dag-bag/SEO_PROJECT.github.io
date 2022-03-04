@@ -123,3 +123,31 @@ aboutMe.addEventListener("mouseover", () => {
 aboutMe.addEventListener("mouseleave", () => {
   aboutMe.classList.remove("showAbout");
 });
+// Anywhere click
+function AnywhereClick() {
+  window.addEventListener("click", () => {
+    mouseCursor.classList.add("anime");
+  });
+}
+
+// Links repair
+const dots = document.querySelectorAll(".scrollBtn a");
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("activate");
+    }
+    dot.classList.add("activate");
+  });
+});
+
+// window.addEventListener("scroll", () => {
+//   dots.forEach((dot) => {
+//     const a = dot.getAttribute("href");
+
+//   });
+// });
+
+for (let i = 0; i < dots.length; i++) {
+  const a = dots[i].getAttribute("href");
+}

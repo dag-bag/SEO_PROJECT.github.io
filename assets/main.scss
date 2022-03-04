@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import "_mediaQuaries";
 @import "_Uitils";
 @import "_colors";
 @import "_nav";
 @import "_home";
 @import "_about";
-@import "recentProjects";
+@import "_recentProjects";
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -24,6 +26,31 @@ html {
 }
 
 body {
+  .activate {
+    background: $secColor;
+  }
+  // transition: scroll-behavior 0.5ss;
+  position: relative;
+  .scrollBtn {
+    position: fixed;
+    top: 50%;
+    right: 1.5rem;
+    width: 4rem;
+    height: 10rem;
+    a {
+      display: block;
+      // background: $secColor;
+      border: 0.4rem solid rgb(97, 92, 92);
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+      cursor: pointer;
+      margin: 0.5rem 0;
+      &:active {
+        background: black !important;
+      }
+    }
+  }
   // cursor: none;
   // About me LINk
   .showAbout {
@@ -114,6 +141,9 @@ body {
     mix-blend-mode: difference;
     background: white;
   }
+  .anime {
+    animation: anime 0.5s infinite alternate;
+  }
   .cursor::after {
     content: "Open now";
     width: 3rem;
@@ -151,6 +181,23 @@ body {
     }
     to {
       scale: (0.7);
+    }
+  }
+  @keyframes anime {
+    0% {
+      scale: (1);
+    }
+    50% {
+      opacity: 0.7;
+      scale: (1.8);
+    }
+    90% {
+      opacity: 0.4;
+      scale: (4);
+    }
+    100% {
+      opacity: 0.2;
+      scale: (10);
     }
   }
 

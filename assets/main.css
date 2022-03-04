@@ -1,4 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@media screen and (max-width: 1283px) {
+  html {
+    font-size: 50% !important;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  html {
+    font-size: 40% !important;
+  }
+  main {
+    height: 87vh;
+  }
+  main .mainCol {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  html {
+    font-size: 40% !important;
+  }
+  main {
+    height: 87vh;
+  }
+  main .mainCol {
+    height: 60vh;
+  }
+  .rightAbout div {
+    margin: auto;
+    width: 60px !important;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  html {
+    font-size: 35% !important;
+  }
+  main {
+    height: 70vh;
+  }
+  main .mainCol {
+    height: 66vh;
+  }
+  .rig .rightAbout div {
+    margin: auto;
+    width: 30px !important;
+  }
+}
+
 .MainHeader {
   background: #17171f;
   color: white;
@@ -312,56 +362,6 @@ main .mainCol .mainRight img {
   height: 100%;
 }
 
-@media screen and (max-width: 1283px) {
-  html {
-    font-size: 50% !important;
-  }
-}
-
-@media screen and (max-width: 730px) {
-  html {
-    font-size: 40% !important;
-  }
-  main {
-    height: 87vh;
-  }
-  main .mainCol {
-    height: 60vh;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  html {
-    font-size: 40% !important;
-  }
-  main {
-    height: 87vh;
-  }
-  main .mainCol {
-    height: 60vh;
-  }
-  .rightAbout div {
-    margin: auto;
-    width: 60px !important;
-  }
-}
-
-@media screen and (max-width: 435px) {
-  html {
-    font-size: 35% !important;
-  }
-  main {
-    height: 70vh;
-  }
-  main .mainCol {
-    height: 66vh;
-  }
-  .rig .rightAbout div {
-    margin: auto;
-    width: 30px !important;
-  }
-}
-
 .about {
   width: 100%;
   height: 100vh;
@@ -398,6 +398,7 @@ main .mainCol .mainRight img {
 }
 
 .about .aboutMe .leftAbout h2:nth-child(1) {
+  font-size: 5rem;
   text-align: center;
   padding: 1rem;
   position: relative;
@@ -480,10 +481,125 @@ main .mainCol .mainRight img {
   font-size: 2rem;
 }
 
-#recentProject {
+.recentProject {
+  background: white;
   height: 100vh;
   width: 100%;
+  background: #17171f;
+}
+
+.recentProject h2 {
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  position: relative;
+}
+
+.recentProject h2::after {
+  content: "";
+  width: 50%;
+  height: 0.5rem;
+  position: absolute;
+  display: block;
+  background: #f0a500;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  border-radius: 1rem;
+}
+
+.recentProject .projectCol {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  gap: 3rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+}
+
+.recentProject .projectCol .projectBox {
+  width: 40rem;
+  height: 35rem;
+  background: #f0a500;
+  border-radius: 1rem;
+}
+
+.recentProject .projectCol .projectBox .imgContainer {
+  position: relative;
+  border-radius: 1rem;
   background: white;
+  width: 100%;
+  height: 26.5rem;
+}
+
+.recentProject .projectCol .projectBox .imgContainer h3 {
+  position: absolute;
+  color: white;
+  bottom: 1rem;
+  left: 3rem;
+  font-size: 2rem;
+}
+
+.recentProject .projectCol .projectBox .imgContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.recentProject .projectCol .projectBox .imgContainer:hover {
+  cursor: pointer;
+}
+
+.recentProject .projectCol .projectBox .imgContainer:hover .cursor {
+  z-index: 1000;
+}
+
+.recentProject .projectCol .projectBox .deitals {
+  height: calc(35rem - 26.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  align-items: center;
+}
+
+.recentProject .projectCol .projectBox .deitals .githubBtn {
+  padding: 1rem 3rem;
+  background: #f0a500;
+  color: white;
+  font-size: 1.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background: black;
+}
+
+.recentProject .projectCol .projectBox .deitals .liveBtn {
+  padding: 1rem 3rem;
+  background: black;
+  color: white;
+  font-size: 1.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
 }
 
 * {
@@ -500,6 +616,7 @@ main .mainCol .mainRight img {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 ::-moz-selection {
@@ -511,7 +628,34 @@ html {
 }
 
 body {
+  position: relative;
   background: #17171f;
+}
+
+body .activate {
+  background: #f0a500;
+}
+
+body .scrollBtn {
+  position: fixed;
+  top: 50%;
+  right: 1.5rem;
+  width: 4rem;
+  height: 10rem;
+}
+
+body .scrollBtn a {
+  display: block;
+  border: 0.4rem solid #615c5c;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+body .scrollBtn a:active {
+  background: black !important;
 }
 
 body .showAbout::after {
@@ -616,6 +760,11 @@ body .cursor {
   background: white;
 }
 
+body .anime {
+  -webkit-animation: anime 0.5s infinite alternate;
+          animation: anime 0.5s infinite alternate;
+}
+
 body .cursor::after {
   content: "Open now";
   width: 3rem;
@@ -666,6 +815,42 @@ body .linkHover {
   }
   to {
     scale: 0.7;
+  }
+}
+
+@-webkit-keyframes anime {
+  0% {
+    scale: 1;
+  }
+  50% {
+    opacity: 0.7;
+    scale: 1.8;
+  }
+  90% {
+    opacity: 0.4;
+    scale: 4;
+  }
+  100% {
+    opacity: 0.2;
+    scale: 10;
+  }
+}
+
+@keyframes anime {
+  0% {
+    scale: 1;
+  }
+  50% {
+    opacity: 0.7;
+    scale: 1.8;
+  }
+  90% {
+    opacity: 0.4;
+    scale: 4;
+  }
+  100% {
+    opacity: 0.2;
+    scale: 10;
   }
 }
 /*# sourceMappingURL=main.css.map */
