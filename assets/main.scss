@@ -6,6 +6,8 @@
 @import "_home";
 @import "_about";
 @import "_recentProjects";
+@import "_getInTouch";
+@import "_footer";
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +21,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  // transition: all 2seeeeeeee;
 }
 
 ::selection {
@@ -26,14 +29,38 @@ html {
 }
 
 body {
+  overflow-y: scroll;
+  height: 100vh;
+
+  .getTouchHovered {
+    @include curse("Contact me right Now");
+  }
+  .hoverLive {
+    // transform: scale(3);
+    // background: $white;
+
+    // animation-play-state: paused !important;
+    // transform-origin: center;
+    // &::after {
+    //   content: "" !important;
+    //   display: block !important;
+    //   // @include flex();
+    //   font-size: 0.7rem;
+    // }
+    @include curse("See live demo");
+  }
+  .sourceHovered {
+    @include curse("See source code");
+  }
   .activate {
     background: $secColor;
+    // border: none !important;
   }
   // transition: scroll-behavior 0.5ss;
   position: relative;
   .scrollBtn {
     position: fixed;
-    top: 50%;
+    top: 30%;
     right: 1.5rem;
     width: 4rem;
     height: 10rem;
@@ -58,7 +85,7 @@ body {
       content: "If You Want Know About Me Click Here." !important;
       width: 13rem !important;
       height: 13rem !important;
-      border: 0.2rem solid white;
+      border: 0.2rem solid $white;
       border-radius: 50%;
       position: absolute;
       top: 100%;
@@ -66,7 +93,7 @@ body {
       color: black;
       text-align: center;
       padding: 1rem;
-      background: white !important;
+      background: $white !important;
       @include flex();
       // display: block !important;
       z-index: 939092309;
@@ -74,32 +101,34 @@ body {
   }
   // Resume Link
   .resumeLink {
-    transform: scale(3);
-    background: white;
+    // transform: scale(3);
+    // background: $white;
 
-    animation-play-state: paused !important;
-    transform-origin: center;
-    &::after {
-      content: "Download Now" !important;
-      display: block !important;
-      // @include flex();
-      font-size: 0.7rem;
-    }
+    // animation-play-state: paused !important;
+    // transform-origin: center;
+    // &::after {
+    //   content: "Download Now" !important;
+    //   display: block !important;
+    //   // @include flex();
+    //   font-size: 0.7rem;
+    @include curse("Download Now") // }
+;
   }
   // Download now link grow
   .downloadLink {
-    transform: scale(3);
-    background: white;
+    // transform: scale(3);
+    // background: $white;
 
-    animation-play-state: paused !important;
-    transform-origin: center;
-    &::after {
-      content: "Hire me" !important;
-      display: block !important;
-      // @include flex();
-      font-size: 0.7rem;
-      // padding-top: 0.4rem !important;
-    }
+    // animation-play-state: paused !important;
+    // transform-origin: center;
+    // &::after {
+    //   content: "Hire me" !important;
+    //   display: block !important;
+    //   // @include flex();
+    //   font-size: 0.7rem;
+    //   // padding-top: 0.4rem !important;
+    // }
+    @include curse("Hire Me Now");
   }
   // IMg grow
   .imgGrow {
@@ -116,7 +145,7 @@ body {
   .textGrow {
     animation-play-state: paused !important;
     transform: scale(6);
-    background: white;
+    background: $white;
 
     transform-origin: center;
   }
@@ -129,7 +158,7 @@ body {
   .cursor {
     width: 3rem;
     height: 3rem;
-    border: 0.2rem solid white;
+    border: 0.2rem solid $white;
     border-radius: 50%;
     position: absolute;
     // z-index: 1000;
@@ -139,7 +168,7 @@ body {
     animation: cursorAnim 0.5s infinite alternate;
     pointer-events: none;
     mix-blend-mode: difference;
-    background: white;
+    background: $white;
   }
   .anime {
     animation: anime 0.5s infinite alternate;
@@ -148,7 +177,7 @@ body {
     content: "Open now";
     width: 3rem;
     height: 3rem;
-    border: 0.2rem solid white;
+    border: 0.2rem solid $white;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -156,14 +185,14 @@ body {
     color: black;
     text-align: center;
     padding: 1rem;
-    background: white;
+    background: $white;
     display: none;
     z-index: 1000;
   }
 
   .linkGrow {
     transform: scale(3);
-    background: white;
+    background: $white;
 
     animation-play-state: paused;
     transform-origin: center;

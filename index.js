@@ -151,3 +151,26 @@ dots.forEach((dot) => {
 for (let i = 0; i < dots.length; i++) {
   const a = dots[i].getAttribute("href");
 }
+
+// Main
+window.addEventListener("scroll", () => {
+  const section = 1;
+  const Headings = document.querySelectorAll("h2");
+  for (let i = 0; i < Headings.length; i++) {
+    if (window.scroll === true) {
+      dots[i].classList.remove("activate");
+      dots[section].classList.add("activate");
+    }
+  }
+});
+// Hover on live demo
+const liveBtn = document.querySelectorAll(".liveBtn");
+main(liveBtn, "hoverLive");
+
+// Source Code
+const sourceBtn = document.querySelectorAll(".githubBtn");
+main(sourceBtn, "sourceHovered");
+// Get in touch function
+const getBtn = document.querySelector("#getTouch");
+
+subMain(getBtn, "getTouchHovered");

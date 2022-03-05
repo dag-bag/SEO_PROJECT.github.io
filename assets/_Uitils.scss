@@ -29,8 +29,9 @@
 @mixin btn {
   background-color: $secColor;
   padding: 1rem 2rem;
-  border-radius: 2rem;
-  color: white;
+  // border-radius: 2rem;
+  border-radius: 0.5rem;
+  color: $white;
   margin-top: 1rem;
   display: block;
   width: 30%;
@@ -45,4 +46,19 @@
   justify-content: $space;
   gap: $gap;
   flex-wrap: wrap;
+}
+
+@mixin curse($text) {
+  transform: scale(3);
+  background: $white;
+
+  animation-play-state: paused !important;
+  transform-origin: center;
+  &::after {
+    content: $text !important;
+    display: block !important;
+    // @include flex();
+
+    font-size: 0.7rem;
+  }
 }

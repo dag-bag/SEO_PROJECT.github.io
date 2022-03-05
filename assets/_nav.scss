@@ -1,6 +1,6 @@
 .MainHeader {
   //Header Css
-  @include Bg($newMainColor, white);
+  @include Bg($newMainColor, $white);
 
   @include WH(100%, 10vh);
   // height: 20vh;
@@ -19,7 +19,7 @@
       //   width: 100%;
       // }
       a {
-        color: white;
+        color: $white;
         font-size: 2rem;
       }
     }
@@ -51,7 +51,7 @@
         a {
           position: relative;
           font-weight: 500;
-          color: white;
+          color: $white;
           font-size: 1.5rem;
           text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
             0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
@@ -73,7 +73,7 @@
           top: 10vh;
           left: 0;
           width: 100%;
-          background-color: white;
+          background-color: $white;
           // background: rgba(255, 255, 255, 0.25);
           // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           // backdrop-filter: blur(4px);
@@ -89,12 +89,12 @@
           // border-radius: 12px;
           // border: 1px solid rgba(255, 255, 255, 0.125);
           color: black;
-          // @include Bg(white, black);
+          // @include Bg($white, black);
           // Content Section
           .content {
             @include flex();
             justify-content: space-between;
-            // @include Bg(white, black);
+            // @include Bg($white, black);
             width: 100%;
             // Targeting Header of Mega menu
             header {
@@ -131,13 +131,13 @@
                 height: 8rem;
                 text-align: center;
                 &:hover {
-                  background: #f0a500;
+                  background: $secColor;
                   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                   a {
-                    color: white;
+                    color: $white;
                   }
                   i {
-                    color: white !important;
+                    color: $white !important;
                   }
                 }
 

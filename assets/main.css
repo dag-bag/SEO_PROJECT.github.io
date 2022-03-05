@@ -172,7 +172,7 @@
 }
 
 .MainHeader nav ul li .megaMenu .content .row ul li:hover {
-  background: #f0a500;
+  background: #6d87ff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -283,7 +283,7 @@ main .mainCol .mainRight {
   /* max-height: 43vh; */
 }
 
-main {
+#main {
   width: 80%;
   height: 100vh;
   display: -webkit-box;
@@ -298,7 +298,7 @@ main {
   margin: auto;
 }
 
-main .mainCol {
+#main .mainCol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,27 +319,27 @@ main .mainCol {
   width: 100%;
 }
 
-main .mainCol .mainLeft {
+#main .mainCol .mainLeft {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 60rem;
           flex: 1 1 60rem;
   color: white;
 }
 
-main .mainCol .mainLeft h2 {
+#main .mainCol .mainLeft h2 {
   font-weight: 300;
   font-size: 3rem;
 }
 
-main .mainCol .mainLeft h2 strong {
-  color: #f0a500;
+#main .mainCol .mainLeft h2 strong {
+  color: #6d87ff;
   background: #17171f;
 }
 
-main .mainCol .mainLeft #hireBtn {
-  background-color: #f0a500;
+#main .mainCol .mainLeft #hireBtn {
+  background-color: #6d87ff;
   padding: 1rem 2rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   color: white;
   margin-top: 1rem;
   display: block;
@@ -347,14 +347,14 @@ main .mainCol .mainLeft #hireBtn {
   font-size: 1.6rem;
 }
 
-main .mainCol .mainRight {
+#main .mainCol .mainRight {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30rem;
           flex: 1 1 30rem;
   border-radius: 1rem;
 }
 
-main .mainCol .mainRight img {
+#main .mainCol .mainRight img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -363,8 +363,8 @@ main .mainCol .mainRight img {
 }
 
 .about {
+  padding-bottom: 10rem;
   width: 100%;
-  height: 100vh;
   background: #17171f;
 }
 
@@ -410,7 +410,7 @@ main .mainCol .mainRight img {
   height: 0.5rem;
   position: absolute;
   display: block;
-  background: #f0a500;
+  background: #6d87ff;
   bottom: 0;
   left: 25%;
   right: 0;
@@ -439,9 +439,9 @@ main .mainCol .mainRight img {
 }
 
 .about .aboutMe .leftAbout .btns #resume {
-  background-color: #f0a500;
+  background-color: #6d87ff;
   padding: 1rem 2rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   color: white;
   margin-top: 1rem;
   display: block;
@@ -451,9 +451,9 @@ main .mainCol .mainRight img {
 }
 
 .about .aboutMe .leftAbout .btns #aboutMe {
-  background-color: #f0a500;
+  background-color: #6d87ff;
   padding: 1rem 2rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   color: white;
   margin-top: 1rem;
   display: block;
@@ -477,13 +477,12 @@ main .mainCol .mainRight img {
 }
 
 .about .aboutMe .rightAbout .tagcloud {
-  color: #f0a500;
+  color: #6d87ff;
   font-size: 2rem;
 }
 
 .recentProject {
   background: white;
-  height: 100vh;
   width: 100%;
   background: #17171f;
 }
@@ -493,6 +492,7 @@ main .mainCol .mainRight img {
   text-align: center;
   font-size: 5rem;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .recentProject h2::after {
@@ -501,7 +501,7 @@ main .mainCol .mainRight img {
   height: 0.5rem;
   position: absolute;
   display: block;
-  background: #f0a500;
+  background: #6d87ff;
   bottom: 0;
   left: 25%;
   right: 0;
@@ -531,11 +531,12 @@ main .mainCol .mainRight img {
 .recentProject .projectCol .projectBox {
   width: 40rem;
   height: 35rem;
-  background: #f0a500;
+  background: black;
   border-radius: 1rem;
 }
 
 .recentProject .projectCol .projectBox .imgContainer {
+  overflow: hidden;
   position: relative;
   border-radius: 1rem;
   background: white;
@@ -549,6 +550,7 @@ main .mainCol .mainRight img {
   bottom: 1rem;
   left: 3rem;
   font-size: 2rem;
+  text-shadow: 0 0 20px #fff, 0 0 30px #6d87ff, 0 0 40px #6d87ff, 0 0 50px #6d87ff, 0 0 60px #6d87ff, 0 0 70px #6d87ff, 0 0 80px #6d87ff;
 }
 
 .recentProject .projectCol .projectBox .imgContainer img {
@@ -585,21 +587,139 @@ main .mainCol .mainRight img {
 
 .recentProject .projectCol .projectBox .deitals .githubBtn {
   padding: 1rem 3rem;
-  background: #f0a500;
+  background: #6d87ff;
   color: white;
   font-size: 1.5rem;
   margin: 1rem;
   border-radius: 1rem;
-  background: black;
 }
 
 .recentProject .projectCol .projectBox .deitals .liveBtn {
   padding: 1rem 3rem;
-  background: black;
+  background: #6d87ff;
   color: white;
   font-size: 1.5rem;
   margin: 1rem;
   border-radius: 1rem;
+}
+
+.getInTouch {
+  padding: 10rem 0;
+  width: 100%;
+}
+
+.getInTouch .getCol {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.getInTouch .getCol h2 {
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.getInTouch .getCol h2::after {
+  content: "";
+  width: 50%;
+  height: 0.5rem;
+  position: absolute;
+  display: block;
+  background: #6d87ff;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  border-radius: 1rem;
+}
+
+.getInTouch .getCol p {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.getInTouch .getCol a {
+  text-align: center;
+  padding: 1rem 3rem;
+  background: #6d87ff;
+  color: white;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+
+#footer {
+  width: 100%;
+  height: 30rem;
+  background: black;
+}
+
+#footer .footerCol {
+  height: 30rem;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#footer .footerCol .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+
+#footer .footerCol .box h5 {
+  color: white;
+  font-size: 2rem;
+}
+
+#footer .footerCol .box input {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#footer .footerCol .box span {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#footer .footerCol .box a {
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+#footer .footerCol .box a:hover {
+  color: #6d87ff;
 }
 
 * {
@@ -628,17 +748,67 @@ html {
 }
 
 body {
+  overflow-y: scroll;
+  height: 100vh;
   position: relative;
   background: #17171f;
 }
 
+body .getTouchHovered {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  background: white;
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+body .getTouchHovered::after {
+  content: "Contact me right Now" !important;
+  display: block !important;
+  font-size: 0.7rem;
+}
+
+body .hoverLive {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  background: white;
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+body .hoverLive::after {
+  content: "See live demo" !important;
+  display: block !important;
+  font-size: 0.7rem;
+}
+
+body .sourceHovered {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  background: white;
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+body .sourceHovered::after {
+  content: "See source code" !important;
+  display: block !important;
+  font-size: 0.7rem;
+}
+
 body .activate {
-  background: #f0a500;
+  background: #6d87ff;
 }
 
 body .scrollBtn {
   position: fixed;
-  top: 50%;
+  top: 30%;
   right: 1.5rem;
   width: 4rem;
   height: 10rem;
@@ -710,7 +880,7 @@ body .downloadLink {
 }
 
 body .downloadLink::after {
-  content: "Hire me" !important;
+  content: "Hire Me Now" !important;
   display: block !important;
   font-size: 0.7rem;
 }

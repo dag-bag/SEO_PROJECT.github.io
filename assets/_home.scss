@@ -9,7 +9,7 @@ main .mainCol .mainRight {
   /* max-height: 43vh; */
 }
 
-main {
+#main {
   // background: $newMainColor;
   width: 80%;
   height: 100vh;
@@ -27,14 +27,14 @@ main {
     .mainLeft {
       // flex-wrap: wrap-reverse;
       flex: 1 1 60rem;
-      color: white;
+      color: $white;
 
       // color: black;
       h2 {
         font-weight: 300;
         font-size: 3rem;
         strong {
-          color: #f0a500;
+          color: $secColor;
           background: $newMainColor;
         }
       }
