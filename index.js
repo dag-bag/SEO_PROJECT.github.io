@@ -13,6 +13,11 @@ const strong = document.querySelectorAll("strong");
 const h2 = document.querySelector("h2");
 console.log(h2);
 
+window.addEventListener("mousemove", cursor);
+function cursor(e) {
+  mouseCursor.style.top = e.pageY - 15 + "px";
+  mouseCursor.style.left = e.pageX - 15 + "px";
+}
 // Main functions
 const imgs = document.querySelectorAll("img");
 function main(element, Class) {
