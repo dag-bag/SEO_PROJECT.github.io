@@ -40,30 +40,30 @@ function subMain(element, Class) {
   });
 }
 // MouseOver functions
-function mouseOver(element, Class) {
-  element.addEventListener("mouseover", () => {
-    mouseCursor.classList.add(`${Class}`);
-  });
-}
-function mouseleave(element, Class) {
-  element.addEventListener("mouseleave", () => {
-    mouseCursor.classList.remove(`${Class}`);
-  });
-}
-function forEachMouseOver(element, Class) {
-  element.forEach((singleElement) => {
-    singleElement.addEventListener("mouseover", () => {
-      mouseCursor.classList.remove(`${Class}`);
-    });
-  });
-}
-function forEachMouseleave(element, Class) {
-  element.forEach((singleElement) => {
-    singleElement.addEventListener("mouseleave", () => {
-      mouseCursor.classList.remove(`${Class}`);
-    });
-  });
-}
+// function mouseOver(element, Class) {
+//   element.addEventListener("mouseover", () => {
+//     mouseCursor.classList.add(`${Class}`);
+//   });
+// }
+// function mouseleave(element, Class) {
+//   element.addEventListener("mouseleave", () => {
+//     mouseCursor.classList.remove(`${Class}`);
+//   });
+// }
+// function forEachMouseOver(element, Class) {
+//   element.forEach((singleElement) => {
+//     singleElement.addEventListener("mouseover", () => {
+//       mouseCursor.classList.remove(`${Class}`);
+//     });
+//   });
+// }
+// function forEachMouseleave(element, Class) {
+//   element.forEach((singleElement) => {
+//     singleElement.addEventListener("mouseleave", () => {
+//       mouseCursor.classList.remove(`${Class}`);
+//     });
+//   });
+// }
 // navlinks Hover
 // navLinks.forEach((links) => {
 //   links.addEventListener("mouseover", () => {
@@ -148,21 +148,6 @@ dots.forEach((dot) => {
 //   });
 // });
 
-for (let i = 0; i < dots.length; i++) {
-  const a = dots[i].getAttribute("href");
-}
-
-// Main
-window.addEventListener("scroll", () => {
-  const section = 1;
-  const Headings = document.querySelectorAll("h2");
-  for (let i = 0; i < Headings.length; i++) {
-    if (window.scroll === true) {
-      dots[i].classList.remove("activate");
-      dots[section].classList.add("activate");
-    }
-  }
-});
 // Hover on live demo
 const liveBtn = document.querySelectorAll(".liveBtn");
 main(liveBtn, "hoverLive");
