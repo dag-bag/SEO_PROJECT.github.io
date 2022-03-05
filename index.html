@@ -12,10 +12,17 @@
     <title>The Piece of Top 10 Javascript Projects Advice That’s Seared Into My Memory </title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="./assets/main.css">
+    <script>
+        const mouseCursor = document.querySelector(".cursor");
+        window.addEventListener("mousemove", cursor);
+        function cursor(e) {
+            mouseCursor.style.top = e.pageY - 15 + "px";
+            mouseCursor.style.left = e.pageX - 15 + "px";
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -309,7 +316,6 @@
     <!-- Scripts Section -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
     <!-- Animation 3d -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="anime.js"></script>
     <script type="module" src="index.js"></script>
