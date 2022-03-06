@@ -11,14 +11,15 @@
     position: relative;
     &::after {
       content: "";
-      width: 50%;
+      width: 40rem;
       height: 0.5rem;
 
       position: absolute;
       display: block;
       background: $secColor;
-      bottom: 0;
-      left: 25%;
+      bottom: -5%;
+      left: 50%;
+      transform: translateX(-50%);
       right: 0;
       border-radius: 1rem;
     }
