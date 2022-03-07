@@ -159,3 +159,15 @@ main(sourceBtn, "sourceHovered");
 const getBtn = document.querySelector("#getTouch");
 
 subMain(getBtn, "getTouchHovered");
+
+// Function for navbar
+const menuBtn = document.querySelector("#menuBar");
+const close = document.querySelector("#close");
+const navBar = document.querySelector("header nav ul");
+
+menuBtn.addEventListener("click", () => {
+  navBar.style.left = "0";
+});
+close.addEventListener("click", () => {
+  navBar.style.left = "-100%";
+});

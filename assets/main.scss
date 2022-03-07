@@ -29,8 +29,7 @@ html {
 }
 
 body {
-  overflow-y: scroll;
-  height: 100vh;
+  // transition: scroll 4s;
 
   .getTouchHovered {
     @include curse("Contact me right Now");

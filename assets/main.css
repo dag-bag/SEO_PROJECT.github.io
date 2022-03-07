@@ -55,6 +55,117 @@
   }
 }
 
+@media screen and (max-width: 955px) {
+  body {
+    position: relative;
+    width: 100%;
+  }
+  body header nav {
+    position: static !important;
+  }
+  body header nav #menuBar {
+    display: block !important;
+  }
+  body header nav #menuBar {
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+  body header nav ul {
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s;
+    width: 30rem;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    display: block;
+  }
+  body header nav ul #close {
+    display: block !important;
+    right: 0.8rem;
+    top: 0.4rem;
+    color: black;
+    font-size: 2.5rem;
+    position: absolute;
+    cursor: pointer;
+  }
+  body header nav ul #mega {
+    cursor: pointer;
+  }
+  body header nav ul #mega label,
+  body header nav ul #mega input {
+    display: block;
+  }
+  body header nav ul #mega #projects {
+    display: none;
+  }
+  body header nav ul #mega input {
+    display: none;
+  }
+  body header nav ul #mega #projectLabel {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+  }
+  body header nav ul #mega #showMega:checked ~ .megaMenu {
+    height: inherit;
+    overflow: visible;
+  }
+  body header nav ul li {
+    text-align: center;
+    float: none !important;
+  }
+  body header nav ul li a {
+    color: black !important;
+    text-shadow: none !important;
+  }
+  body header nav ul li .megaMenu {
+    width: 100%;
+    display: block !important;
+    overflow: hidden !important;
+    position: static !important;
+  }
+  body header nav ul li .megaMenu .content {
+    width: 100%;
+    display: block !important;
+  }
+  body header nav ul li .megaMenu .content .row {
+    width: 100% !important;
+    text-align: center;
+  }
+  body header nav ul li .megaMenu .content .row input:checked ~ .megalinks {
+    max-height: 9rem;
+    overflow: visible;
+  }
+  body header nav ul li .megaMenu .content .row h3 {
+    display: none;
+  }
+  body header nav ul li .megaMenu .content .row h3::after {
+    display: none;
+  }
+  body header nav ul li .megaMenu .content .row .megalinks {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    position: static;
+    width: 100%;
+  }
+  body header nav ul li .megaMenu .content .row .megalinks li {
+    padding: 0.3rem 1rem;
+    height: 2rem !important;
+  }
+  body header nav ul li .megaMenu .content .row .megalinks li a {
+    padding: 0;
+  }
+  body header nav ul li .megaMenu .content .row .megalinks li a i {
+    display: none;
+  }
+  body header nav ul li .megaMenu .content .row .megalinks li a h4 {
+    font-size: 1.2rem !important;
+  }
+}
+
 .MainHeader {
   background: #17171f;
   color: white;
@@ -82,6 +193,11 @@
           justify-content: space-between;
 }
 
+.MainHeader nav #menuBar,
+.MainHeader nav #close {
+  display: none;
+}
+
 .MainHeader nav .logo {
   width: 7.5rem;
 }
@@ -89,6 +205,11 @@
 .MainHeader nav .logo a {
   color: white;
   font-size: 2rem;
+}
+
+.MainHeader nav ul label,
+.MainHeader nav ul input {
+  display: none;
 }
 
 .MainHeader nav ul #HireLi {
@@ -136,7 +257,6 @@
 }
 
 .MainHeader nav ul li .megaMenu .content {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,20 +270,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-}
-
-.MainHeader nav ul li .megaMenu .content::after {
-  content: "";
-  width: 3rem;
-  height: 3rem;
-  background-color: white;
-  position: absolute;
-  top: -16px;
-  left: 75%;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  border: 0.1rem solid white;
-  z-index: 1000;
 }
 
 .MainHeader nav ul li .megaMenu .content h3 {
@@ -771,8 +877,6 @@ html {
 }
 
 body {
-  overflow-y: scroll;
-  height: 100vh;
   position: relative;
   background: #17171f;
 }
