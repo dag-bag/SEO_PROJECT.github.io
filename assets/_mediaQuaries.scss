@@ -74,12 +74,17 @@
         ul {
           #close {
             display: block !important;
-            right: 0.8rem;
-            top: 0.4rem;
+            right: 2.5rem;
+            top: 2.5rem;
             color: black;
-            font-size: 2.5rem;
+            font-size: 3rem;
             position: absolute;
             cursor: pointer;
+            margin: 0;
+            padding: 0;
+            // -webkit-transition: 0.2s;
+            transition: none;
+            border-radius: none;
           }
           transition: left 0.5s;
           width: 100%;
