@@ -73,7 +73,7 @@
   body header nav ul {
     -webkit-transition: left 0.5s;
     transition: left 0.5s;
-    width: 30rem;
+    width: 100%;
     height: 100vh;
     background: white;
     position: absolute;
@@ -103,7 +103,7 @@
   body header nav ul #mega input {
     display: none;
   }
-  body header nav ul #mega #projectLabel {
+  body header nav ul #mega .projectLabel {
     font-size: 1.5rem;
     color: black;
     font-weight: 500;
