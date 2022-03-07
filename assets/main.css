@@ -93,7 +93,7 @@
     padding: 0;
     -webkit-transition: none;
     transition: none;
-    border-radius: none;
+    border-radius: 0;
   }
   body header nav ul #mega {
     cursor: pointer;
@@ -233,7 +233,6 @@
 .MainHeader nav ul li:hover ul {
   display: block;
   height: 75vh;
-  overflow: show;
 }
 
 .MainHeader nav ul li a {
