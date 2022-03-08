@@ -15,29 +15,37 @@ console.log(h2);
 
 window.addEventListener("mousemove", cursor);
 function cursor(e) {
-  mouseCursor.style.top = e.pageY - 15 + "px";
-  mouseCursor.style.left = e.pageX - 15 + "px";
+  if (window.innerWidth >= 950) {
+    mouseCursor.style.top = e.pageY - 15 + "px";
+    mouseCursor.style.left = e.pageX - 15 + "px";
+  }
 }
+
 // Main functions
+
 const imgs = document.querySelectorAll("img");
 function main(element, Class) {
-  element.forEach((singleElement) => {
-    singleElement.addEventListener("mouseover", () => {
-      mouseCursor.classList.add(`${Class}`);
+  if (window.innerWidth >= 950) {
+    element.forEach((singleElement) => {
+      singleElement.addEventListener("mouseover", () => {
+        mouseCursor.classList.add(`${Class}`);
+      });
+      singleElement.addEventListener("mouseleave", () => {
+        mouseCursor.classList.remove(`${Class}`);
+      });
     });
-    singleElement.addEventListener("mouseleave", () => {
-      mouseCursor.classList.remove(`${Class}`);
-    });
-  });
+  }
 }
 // Submain function
 function subMain(element, Class) {
-  element.addEventListener("mouseover", () => {
-    mouseCursor.classList.add(`${Class}`);
-  });
-  element.addEventListener("mouseleave", () => {
-    mouseCursor.classList.remove(`${Class}`);
-  });
+  if (window.innerWidth >= 950) {
+    element.addEventListener("mouseover", () => {
+      mouseCursor.classList.add(`${Class}`);
+    });
+    element.addEventListener("mouseleave", () => {
+      mouseCursor.classList.remove(`${Class}`);
+    });
+  }
 }
 // MouseOver functions
 // function mouseOver(element, Class) {

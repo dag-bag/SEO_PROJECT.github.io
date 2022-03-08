@@ -58,6 +58,9 @@
 // Mobile navigation for android and mobile users
 @media screen and (max-width: 955px) {
   body {
+    .cursor {
+      display: none;
+    }
     position: relative;
     width: 100%;
 

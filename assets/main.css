@@ -60,6 +60,9 @@
     position: relative;
     width: 100%;
   }
+  body .cursor {
+    display: none;
+  }
   body header nav {
     position: static !important;
   }
