@@ -39,7 +39,7 @@
         overflow: hidden;
         h3 {
           position: absolute;
-          color: $white;
+          color: $BtnColor;
           bottom: 1rem;
           left: 3rem;
           font-size: 2rem;
@@ -74,7 +74,7 @@
         .githubBtn {
           padding: 1rem 3rem;
           background: $secColor;
-          color: $white;
+          color: $BtnColor;
           font-size: 1.5rem;
           margin: 1rem;
           border-radius: 1rem;
@@ -83,7 +83,7 @@
         .liveBtn {
           padding: 1rem 3rem;
           background: $secColor;
-          color: $white;
+          color: $BtnColor;
           font-size: 1.5rem;
           margin: 1rem;
           border-radius: 1rem;
