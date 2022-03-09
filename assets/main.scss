@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
 @import "_mediaQuaries";
 @import "_Uitils";
 @import "_colors";
@@ -8,6 +9,7 @@
 @import "_recentProjects";
 @import "_getInTouch";
 @import "_footer";
+
 * {
   margin: 0;
   padding: 0;
@@ -238,4 +240,16 @@ body {
   // Targeting main section
 
   // About me section
+  // .skeleton {
+  //   animation: skeletonLoading 1s ease infinite alternate;
+  // }
+
+  // @keyframes skeletonLoading {
+  //   0% {
+  //     background-color: hsl(200, 20%, 70%);
+  //   }
+  //   100% {
+  //     background-color: hsl(200, 20%, 95%);
+  //   }
+  // }
 }
