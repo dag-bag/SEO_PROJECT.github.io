@@ -292,7 +292,7 @@
   position: absolute;
   height: 0.3rem;
   border-radius: 0.5rem;
-  background: #dfdfea;
+  background: #61e48b;
   bottom: 0%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -313,7 +313,7 @@
 }
 
 .MainHeader nav ul li .megaMenu .content .row ul li:hover {
-  background: #dfdfea;
+  background: #61e48b;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -466,12 +466,12 @@ main .mainCol .mainRight {
 }
 
 #main .mainCol .mainLeft h2 strong {
-  color: #dfdfea;
+  color: #61e48b;
   background: #17171f;
 }
 
 #main .mainCol .mainLeft #hireBtn {
-  background-color: #dfdfea;
+  background-color: #61e48b;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   color: black;
@@ -544,7 +544,7 @@ main .mainCol .mainRight {
   height: 0.5rem;
   position: absolute;
   display: block;
-  background: #dfdfea;
+  background: #61e48b;
   bottom: 0;
   left: 25%;
   right: 0;
@@ -573,7 +573,7 @@ main .mainCol .mainRight {
 }
 
 .about .aboutMe .leftAbout .btns #resume {
-  background-color: #dfdfea;
+  background-color: #61e48b;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   color: black;
@@ -585,7 +585,7 @@ main .mainCol .mainRight {
 }
 
 .about .aboutMe .leftAbout .btns #aboutMe {
-  background-color: #dfdfea;
+  background-color: #61e48b;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   color: black;
@@ -635,7 +635,7 @@ main .mainCol .mainRight {
   height: 0.5rem;
   position: absolute;
   display: block;
-  background: #dfdfea;
+  background: #61e48b;
   bottom: -5%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -686,7 +686,7 @@ main .mainCol .mainRight {
   bottom: 1rem;
   left: 3rem;
   font-size: 2rem;
-  text-shadow: 0 0 20px #fff, 0 0 30px #dfdfea, 0 0 40px #dfdfea, 0 0 50px #dfdfea, 0 0 60px #dfdfea, 0 0 70px #dfdfea, 0 0 80px #dfdfea;
+  text-shadow: 0 0 20px #fff, 0 0 30px #61e48b, 0 0 40px #61e48b, 0 0 50px #61e48b, 0 0 60px #61e48b, 0 0 70px #61e48b, 0 0 80px #61e48b;
 }
 
 .recentProject .projectCol .projectBox .imgContainer img {
@@ -723,7 +723,7 @@ main .mainCol .mainRight {
 
 .recentProject .projectCol .projectBox .deitals .githubBtn {
   padding: 1rem 3rem;
-  background: #dfdfea;
+  background: #61e48b;
   color: black;
   font-size: 1.5rem;
   margin: 1rem;
@@ -732,7 +732,7 @@ main .mainCol .mainRight {
 
 .recentProject .projectCol .projectBox .deitals .liveBtn {
   padding: 1rem 3rem;
-  background: #dfdfea;
+  background: #61e48b;
   color: black;
   font-size: 1.5rem;
   margin: 1rem;
@@ -779,7 +779,7 @@ main .mainCol .mainRight {
   height: 0.5rem;
   position: absolute;
   display: block;
-  background: #dfdfea;
+  background: #61e48b;
   bottom: 0;
   left: 25%;
   right: 0;
@@ -794,7 +794,7 @@ main .mainCol .mainRight {
 .getInTouch .getCol a {
   text-align: center;
   padding: 1rem 3rem;
-  background: #dfdfea;
+  background: #61e48b;
   color: black;
   font-size: 2rem;
   border-radius: 0.5rem;
@@ -855,7 +855,7 @@ main .mainCol .mainRight {
 }
 
 #footer .footerCol .box a:hover {
-  color: #dfdfea;
+  color: #61e48b;
 }
 
 * {
@@ -937,7 +937,7 @@ body .sourceHovered::after {
 }
 
 body .activate {
-  background: #dfdfea;
+  background: #61e48b;
 }
 
 body .scrollBtn {
