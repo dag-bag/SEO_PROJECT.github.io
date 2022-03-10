@@ -70,7 +70,11 @@
       // background-color: white;
       .tagcloud {
         color: #6dff9c;
+        // background: #000;
         font-size: 2rem;
+        span {
+          // background-color: black;
+        }
       }
     }
   }

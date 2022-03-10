@@ -15,7 +15,7 @@ const texts = [
 
 var tagCloud = TagCloud(".rightAbout", texts, {
   radius: 230,
-  maxSpeed: "fast",
+  maxSpeed: "medium",
   initSpeed: "fast",
   direction: 135,
   keep: true,
