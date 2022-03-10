@@ -140,15 +140,6 @@ function AnywhereClick() {
 }
 
 // Links repair
-const dots = document.querySelectorAll(".scrollBtn a");
-dots.forEach((dot) => {
-  dot.addEventListener("click", () => {
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].classList.remove("activate");
-    }
-    dot.classList.add("activate");
-  });
-});
 
 // window.addEventListener("scroll", () => {
 //   dots.forEach((dot) => {
