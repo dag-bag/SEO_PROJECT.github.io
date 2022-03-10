@@ -135,8 +135,12 @@
             //   }
             // }
           }
+          #HireLi {
+            background-color: white !important;
+          }
           li {
             text-align: center;
+            background-color: white;
             a {
               color: black !important;
               text-shadow: none !important;

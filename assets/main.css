@@ -126,8 +126,12 @@
     height: inherit;
     overflow: visible;
   }
+  body header nav ul #HireLi {
+    background-color: white !important;
+  }
   body header nav ul li {
     text-align: center;
+    background-color: white;
     float: none !important;
   }
   body header nav ul li a {
