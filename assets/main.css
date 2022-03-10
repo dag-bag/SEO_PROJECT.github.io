@@ -37,6 +37,12 @@
     margin: auto;
     width: 60px !important;
   }
+  .recentProject .projectCol .projectBox {
+    width: 60rem !important;
+    height: 35rem;
+    background: black;
+    border-radius: 1rem;
+  }
 }
 
 @media screen and (max-width: 435px) {
