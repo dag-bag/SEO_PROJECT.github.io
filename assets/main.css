@@ -845,7 +845,7 @@ main .mainCol .mainRight {
           flex: 1 1 30rem;
 }
 
-#footer .footerCol .box h5 {
+#footer .footerCol .box h6 {
   color: white;
   font-size: 2rem;
 }
