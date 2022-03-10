@@ -59,6 +59,11 @@
           object-fit: cover;
           border-radius: 1rem;
         }
+        iframe {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
         &:hover {
           cursor: pointer;
           .cursor {
