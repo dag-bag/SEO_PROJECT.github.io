@@ -696,6 +696,13 @@ main .mainCol .mainRight {
   border-radius: 1rem;
 }
 
+.recentProject .projectCol .projectBox .imgContainer iframe {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
 .recentProject .projectCol .projectBox .imgContainer:hover {
   cursor: pointer;
 }
@@ -868,11 +875,13 @@ main .mainCol .mainRight {
   border: none;
   outline: none;
   font-family: "Poppins", "sans-serif";
+  font-display: swap;
 }
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-display: swap;
 }
 
 ::-moz-selection {
