@@ -171,11 +171,3 @@ menuBtn.addEventListener("click", () => {
 close.addEventListener("click", () => {
   navBar.style.left = "-100%";
 });
-// Main photo
-const MainPhoto = document.querySelector("#mainPhoto");
-console.log(MainPhoto);
-const ImgSrc = MainPhoto.getAttribute("data-src");
-
-setTimeout(() => {
-  MainPhoto.src = ImgSrc;
-}, 1000);
