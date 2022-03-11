@@ -7,9 +7,11 @@
     @include col(center, 2rem);
     .box {
       flex: 1 1 30rem;
-      h6 {
-        color: $white;
+      button {
+        color: white;
         font-size: 2rem;
+        background-color: black;
+        cursor: pointer;
       }
       input {
         padding: 1rem;
@@ -27,17 +29,6 @@
         &:hover {
           color: $secColor;
         }
-      }
-      #mc_embed_signup {
-        width: 100%;
-        background-color: black;
-        color: white;
-      }
-      #mc-embedded-subscribe {
-        background-color: white;
-        color: black;
-        width: 20rem;
-        height: 5rem;
       }
     }
   }

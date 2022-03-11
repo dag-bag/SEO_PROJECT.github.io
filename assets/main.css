@@ -763,9 +763,11 @@
           flex: 1 1 30rem;
 }
 
-#footer .footerCol .box h6 {
+#footer .footerCol .box button {
   color: white;
   font-size: 2rem;
+  background-color: black;
+  cursor: pointer;
 }
 
 #footer .footerCol .box input {
@@ -787,19 +789,6 @@
 
 #footer .footerCol .box a:hover {
   color: #61e48b;
-}
-
-#footer .footerCol .box #mc_embed_signup {
-  width: 100%;
-  background-color: black;
-  color: white;
-}
-
-#footer .footerCol .box #mc-embedded-subscribe {
-  background-color: white;
-  color: black;
-  width: 20rem;
-  height: 5rem;
 }
 
 * {
