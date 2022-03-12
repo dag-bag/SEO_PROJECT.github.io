@@ -29,6 +29,9 @@
     }
 
     ul {
+      .mobile {
+        display: none;
+      }
       label,
       input {
         display: none;

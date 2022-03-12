@@ -76,26 +76,31 @@
     cursor: pointer;
   }
   body header nav ul {
+    padding-top: 4rem;
     -webkit-transition: left 0.5s;
     transition: left 0.5s;
     width: 100%;
     height: 100vh;
-    background: white;
+    background: black;
     position: absolute;
     left: -100%;
     top: 0;
     display: block;
   }
-  body header nav ul #close {
+  body header nav ul .mobile {
     display: block !important;
-    right: 2.5rem;
-    top: 2.5rem;
-    color: black;
-    font-size: 3rem;
+  }
+  body header nav ul #close {
+    display: inline-block !important;
+    right: 4rem;
+    top: 2rem;
+    color: white;
+    font-size: 4rem;
     position: absolute;
     cursor: pointer;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
+    width: 3rem;
     -webkit-transition: none;
     transition: none;
     border-radius: 0;
@@ -114,33 +119,53 @@
     display: none;
   }
   body header nav ul #mega .projectLabel {
-    font-size: 1.5rem;
-    color: black;
+    padding-left: 4rem;
+    font-size: 2.5rem;
+    color: white;
     font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body header nav ul #mega .projectLabel i {
+    margin: 1rem;
+    display: inline-block;
   }
   body header nav ul #mega #showMega:checked ~ .megaMenu {
     height: inherit;
     overflow: visible;
   }
   body header nav ul #HireLi {
-    background-color: white !important;
+    background-color: black !important;
   }
   body header nav ul li {
-    text-align: center;
-    background-color: white;
+    text-align: start;
+    background-color: black;
+    border-bottom: 0.1rem solid #61e48b;
+    padding: 3rem 0 !important;
     float: none !important;
   }
   body header nav ul li a {
-    color: black !important;
+    padding-left: 4rem !important;
+    color: white !important;
     text-shadow: none !important;
+    font-size: 2.5rem !important;
+  }
+  body header nav ul li a i {
+    display: block;
   }
   body header nav ul li .megaMenu {
+    padding: 0;
     width: 100%;
     display: block !important;
     overflow: hidden !important;
     position: static !important;
   }
   body header nav ul li .megaMenu .content {
+    margin: 0;
     width: 100%;
     display: block !important;
   }
@@ -219,6 +244,10 @@
 .MainHeader nav .logo a {
   color: white;
   font-size: 2rem;
+}
+
+.MainHeader nav ul .mobile {
+  display: none;
 }
 
 .MainHeader nav ul label,
