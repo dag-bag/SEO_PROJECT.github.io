@@ -478,6 +478,8 @@
           flex: 1 1 50rem;
   color: white;
   font-size: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about .aboutMe .leftAbout h2:nth-child(1) {
@@ -555,17 +557,57 @@
 
 .about .aboutMe .rightAbout {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 30rem;
-          flex: 1 1 30rem;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
   border-radius: 1rem;
 }
 
-.about .aboutMe .rightAbout img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
+.about .aboutMe .rightAbout .rightAboutCol {
+  padding-top: 2rem;
+}
+
+.about .aboutMe .rightAbout .rightAboutCol .box {
+  border-radius: 0.5rem;
+  height: 15rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #27272a;
+}
+
+.about .aboutMe .rightAbout .rightAboutCol .box:hover {
+  background: #61e48b;
+}
+
+.about .aboutMe .rightAbout .rightAboutCol .box:hover h4,
+.about .aboutMe .rightAbout .rightAboutCol .box:hover p {
+  color: black;
+}
+
+.about .aboutMe .rightAbout .rightAboutCol .box h4 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.about .aboutMe .rightAbout .rightAboutCol .box p {
+  padding-left: 1rem;
+  color: white;
+}
+
+.about .aboutMe .rightAbout .rightAboutCol .box img {
+  width: 10rem;
   border-radius: 1rem;
-  height: 100%;
 }
 
 .recentProject {

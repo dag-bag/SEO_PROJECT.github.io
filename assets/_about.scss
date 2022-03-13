@@ -41,6 +41,8 @@
       }
       color: $white;
       font-size: 2rem;
+      text-align: justify;
+      text-justify: inter-word;
       .btns {
         @include flex();
         gap: 4rem;
@@ -68,18 +70,46 @@
       // max-width: 50%;
       // width: 40%;
       // background-color: white;
-      flex: 1 1 30rem;
+      flex: 1 1 50rem;
 
       border-radius: 1rem;
+      .rightAboutCol {
+        padding-top: 2rem;
+        .box {
+          &:hover {
+            background: $secColor;
+            h4,
+            p {
+              color: black;
+            }
+          }
+          border-radius: 0.5rem;
+          height: 15rem;
+          margin-bottom: 1rem;
+          padding: 1rem;
+          @include flex();
+          justify-content: space-between;
 
-      img {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 1rem;
-        height: 100%;
-        // max-height: 10rem;
-        // border-radius: 50%;
-        // border: 5px solid white;
+          background-color: #27272a;
+
+          h4 {
+            color: $white;
+            font-size: 1.5rem;
+          }
+          p {
+            padding-left: 1rem;
+            color: $white;
+          }
+          img {
+            // object-fit: cover;
+            width: 10rem;
+            border-radius: 1rem;
+            // height: 100%;
+            // max-height: 10rem;
+            // border-radius: 50%;
+            // border: 5px solid white;
+          }
+        }
       }
     }
   }
