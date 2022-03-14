@@ -533,6 +533,7 @@
   width: 30%;
   font-size: 1.6rem;
   background: white;
+  width: auto;
 }
 
 .about .aboutMe .leftAbout .btns #aboutMe {
@@ -544,6 +545,7 @@
   display: block;
   width: 30%;
   font-size: 1.6rem;
+  width: auto;
   position: relative;
 }
 
@@ -595,19 +597,38 @@
   color: black;
 }
 
-.about .aboutMe .rightAbout .rightAboutCol .box h4 {
-  color: white;
+.about .aboutMe .rightAbout .rightAboutCol .box .subBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: #acfdfb;
+  width: 55rem;
+}
+
+.about .aboutMe .rightAbout .rightAboutCol .box .subBox h4 {
+  color: black;
   font-size: 1.5rem;
+}
+
+.about .aboutMe .rightAbout .rightAboutCol .box .subBox img {
+  width: 10rem;
+  border-radius: 1rem;
 }
 
 .about .aboutMe .rightAbout .rightAboutCol .box p {
   padding-left: 1rem;
   color: white;
-}
-
-.about .aboutMe .rightAbout .rightAboutCol .box img {
-  width: 10rem;
-  border-radius: 1rem;
 }
 
 .recentProject {

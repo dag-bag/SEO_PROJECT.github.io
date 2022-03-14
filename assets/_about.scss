@@ -51,9 +51,11 @@
         #resume {
           @include btn();
           background: $white;
+          width: auto;
         }
         #aboutMe {
           @include btn();
+          width: auto;
           position: relative;
           &::after {
             content: "";
@@ -91,23 +93,29 @@
           justify-content: space-between;
 
           background-color: #27272a;
-
-          h4 {
-            color: $white;
-            font-size: 1.5rem;
+          .subBox {
+            @include flex();
+            flex-direction: column;
+            border-radius: 0.5rem;
+            background-color: #acfdfb;
+            width: 55rem;
+            h4 {
+              color: black;
+              font-size: 1.5rem;
+            }
+            img {
+              // object-fit: cover;
+              width: 10rem;
+              border-radius: 1rem;
+              // height: 100%;
+              // max-height: 10rem;
+              // border-radius: 50%;
+              // border: 5px solid white;
+            }
           }
           p {
             padding-left: 1rem;
             color: $white;
-          }
-          img {
-            // object-fit: cover;
-            width: 10rem;
-            border-radius: 1rem;
-            // height: 100%;
-            // max-height: 10rem;
-            // border-radius: 50%;
-            // border: 5px solid white;
           }
         }
       }
