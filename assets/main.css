@@ -238,6 +238,15 @@
   }
 }
 
+@media screen and (max-width: 370px) {
+  #main .mainCol .mainRight img {
+    width: 250px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .MainHeader {
   background: #17171f;
   color: white;
