@@ -11,7 +11,7 @@ const navLinks = document.querySelectorAll("nav ul li");
 const anchorText = document.querySelectorAll("nav ul li a");
 const strong = document.querySelectorAll("strong");
 const h2 = document.querySelector("h2");
-console.log(h2);
+// console.log(h2);
 
 window.addEventListener("mousemove", cursor);
 function cursor(e) {
@@ -118,7 +118,7 @@ subMain(downloadBtn, "downloadLink");
 // mouseleave(downloadBtn, "downloadLink");
 // Resume link hover
 const resumeBtn = document.querySelector("#resume");
-console.log(resumeBtn);
+// console.log(resumeBtn);
 subMain(resumeBtn, "resumeLink");
 // mouseleave(resumeBtn, "resumeLink");
 
