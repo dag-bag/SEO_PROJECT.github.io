@@ -160,6 +160,7 @@
     background-color: rgba(17, 25, 40, 0.75) !important;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125) !important;
+    /* From https://css.glass */
   }
   body header nav ul li a {
     padding-left: 4rem !important;
