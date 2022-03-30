@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
@@ -70,7 +71,7 @@
 <!-- Tag cloud js
 -->
 
-<body>
+<body data-scrollbar>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59P4NFV" height="0" width="0"
             style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -229,8 +230,9 @@
         <div class="mainCol">
             <div class="mainLeft">
                 <h2>
-                    Virender, a
-                    <strong>Digital Marketer that <strong>codes.</strong></strong> To
+                    Hey There ,<br>
+                    I'm Virender
+                    <!-- <strong>Digital Marketer that <strong>codes.</strong></strong> To
                     helping people, apply <strong>technology</strong> to solve their
                     problems.
                     <br />
@@ -238,12 +240,17 @@
                     To helping businesses, improve through
                     <strong>digital marketing</strong>, to discover new ideas and
                     technology, find their <strong>audience</strong> and build their
-                    <strong>brand.</strong>
+                    <strong>brand.</strong> -->
                 </h2>
+                <p>
+                    Digital Marketer that codes. To
+                    helping people, apply technology to solve their
+                    problems.
+                </p>
                 <a href="#" id="hireBtn">Hire me</a>
             </div>
             <div class="mainRight">
-                <img src="images/myAvatar.svg" width="350px" height="350px" alt="">
+                <!-- <img src="images/myAvatar.svg" width="350px" height="350px" alt=""> -->
             </div>
         </div>
     </section>
@@ -424,6 +431,26 @@
     <!--  Animation 3d -->
     <script src="https://kit.fontawesome.com/646c66e245.js" crossorigin="anonymous"></script>
     <script src="./Scripts/index.js"></script>
+    <script src="./Scripts/GithubApis.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <script>
+        const scroller = document.querySelector("[data-scrollbar]");
+        const bodyScrollBar = Scrollbar.init(scroller);
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        // code for gsap and smooth scrollbar work together
+        ScrollTrigger.scrollerProxy("body", {
+            scrollTop(value) {
+                if (arguments.length) {
+                    bodyScrollBar.scrollTop = value;
+                }
+                return bodyScrollBar.scrollTop;
+            },
+        });
+        bodyScrollBar.addListener(ScrollTrigger.refresh);
+    </script>
 </body>
 
 </html>

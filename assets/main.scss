@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800;900&family=Proza+Libre:wght@500;600;700&display=swap");
 @import "_mediaQuaries";
 @import "_Uitils";
 @import "_colors";
 @import "_nav";
 // @import "_home";
 @import "_about";
-@import "_recentProjects";
+@import "recentProjects";
 @import "_getInTouch";
 @import "_footer";
 
@@ -62,26 +61,7 @@ body {
   }
   // transition: scroll-behavior 0.5ss;
   position: relative;
-  .scrollBtn {
-    position: fixed;
-    top: 30%;
-    right: 1.5rem;
-    width: 4rem;
-    height: 10rem;
-    a {
-      display: block;
-      // background: $secColor;
-      border: 0.4rem solid rgb(97, 92, 92);
-      border-radius: 50%;
-      height: 3rem;
-      width: 3rem;
-      cursor: pointer;
-      margin: 0.5rem 0;
-      &:active {
-        background: black !important;
-      }
-    }
-  }
+
   // cursor: none;
   // About me LINk
   .showAbout {
@@ -197,6 +177,7 @@ body {
   .linkGrow {
     transform: scale(3);
     background: $white;
+    mix-blend-mode: difference;
 
     animation-play-state: paused;
     transform-origin: center;

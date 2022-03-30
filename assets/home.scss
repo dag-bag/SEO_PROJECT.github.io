@@ -46,18 +46,23 @@ main .mainCol .mainRight {
     height: 100vh;
     width: 100%;
     .mainLeft {
+      padding: 2rem;
+      border-radius: 2rem;
       // flex-wrap: wrap-reverse;
       flex: 1 1 60rem;
       color: $white;
 
       // color: black;
       h2 {
-        font-weight: 300;
-        font-size: 3rem;
-        strong {
-          color: $secColor;
-          background: $newMainColor;
-        }
+        position: relative;
+        font-weight: 600;
+        font-size: 7rem;
+
+        border-radius: 2rem;
+      }
+
+      p {
+        font-size: 2rem;
       }
       #hireBtn {
         @include btn();
