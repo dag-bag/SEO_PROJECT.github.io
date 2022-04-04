@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
-
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
     <!-- Google Tag Manager -->
     <script>
+
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -424,7 +427,10 @@
                 </span>
             </div>
             <div class="box">
-                <a href="thanks.html">Subscribe Us</a>
+                <a href="thanks.html" onclick="dataLayer.push({
+                    'FormSubmission': 'Subscribe',
+                    
+                });">Subscribe Us</a>
                 <input type="text" name="Subscribe Us" placeholder="Enter your email" />
             </div>
         </div>
